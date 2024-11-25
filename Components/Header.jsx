@@ -25,9 +25,9 @@ const Header = () => {
             dolore quis. Totam, impedit eveniet necessitatibus rem nulla
             repudiandae accusantium aliquam laboriosam vero fugit hic cumque.
           </p>
-          <form className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black">
+          <form className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000]">
             <input type="email" placeholder="Enter Your Email" className="pl-4 outline-none"></input>
-            <button className="border border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white">Subscribe</button>
+            <button type="submit" className="border border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white">Subscribe</button>
           </form>
         </div>
       
