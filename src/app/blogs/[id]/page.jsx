@@ -6,7 +6,7 @@ import { assets } from "./../../../../Assets/assets";
 import Footer from "../../../../Components/Footer";
 import Link from "next/link";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [data, setData] = useState(null);
   const fetchBlogData = () => {
     for (let i = 0; i < blog_data.length; i++) {
@@ -91,4 +91,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

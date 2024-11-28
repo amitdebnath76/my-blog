@@ -84,7 +84,8 @@ export async function POST(request) {
   
       const imageByteData = await image.arrayBuffer();
       const buffer = Buffer.from(imageByteData);
-      const publicDir = "./public";
+      const publicDir = "../public";
+      await mkdir(publicPath, { recursive: true });
       const path = `${publicDir}/${timestamp}_${image.name}`;
   
       await mkdir(publicDir, { recursive: true }); // Create public directory if it doesn't exist
